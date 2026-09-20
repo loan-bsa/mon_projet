@@ -11,10 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // La table "users" par défaut de Laravel n'est pas utilisée parce que ce projet
-        // a sa propre table "utilisateurs" (Utilisateur.php).
-        // On garde seulement password_reset_tokens nécessaire pour la
-        // fonctionnalité "mot de passe oublié".
+        
+        // On garde seulement password_reset_tokens pour la fonctionnalité mot de passe oublié
         Schema::create('password_reset_tokens', function (Blueprint $table) {
             $table->string('email')->primary();
             $table->string('token');
