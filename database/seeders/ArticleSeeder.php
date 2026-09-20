@@ -18,7 +18,7 @@ class ArticleSeeder extends Seeder
             ['nom' => 'Manchon de tir', 'description' => 'Maintien et compression.', 'prix' => 14.99, 'categories' => [3]],
             ['nom' => 'Ballon Spalding officiel', 'description' => 'Taille 7, usage intérieur/extérieur.', 'prix' => 34.99, 'categories' => [4]],
             ['nom' => 'Air Jordan 1', 'description' => 'Édition rétro, cuir premium.', 'prix' => 179.99, 'categories' => [5]],
-            // Exemple d'article rattaché à DEUX catégories, pour démontrer le many-to-many
+            // Exemple d'article pour le many-to-many
             ['nom' => 'Nike LeBron 21', 'description' => 'Chaussure performance dernière génération.', 'prix' => 199.99, 'categories' => [5, 3]],
         ];
 
